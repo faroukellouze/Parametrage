@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-spring-boot:run</actionName>
+            <displayName>spring-boot:run</displayName>
+            <goals>
+                <goal>spring-boot:run</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-sonar:sonar</actionName>
+            <displayName>sonar:sonar</displayName>
+            <goals>
+                <goal>sonar:sonar</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-mapper</actionName>
+            <displayName>mapper</displayName>
+            <goals>
+                <goal>org.bsc.maven:maven-processor-plugin:2.2.4:process</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-docker</actionName>
+            <displayName>docker</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>package</goal>
+                <goal>docker:build</goal>
+            </goals>
+        </action>
+    </actions>
